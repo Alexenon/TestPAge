@@ -1,0 +1,103 @@
+<!--suppress HtmlRequiredAltAttribute, JSUnresolvedLibraryURL -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <title>Contact Page</title>
+</head>
+<body>
+
+<section class="sub-header">
+    <nav class="top-elements">
+        <a href="index.html"><img src="../images/logo.png" alt=""></a>
+        <div class="nav-links" id="NavLinks">
+            <i class="fa-solid fa-xmark x-mark" onclick="hideMenu()"></i>
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="course.html">Course</a></li>
+                <li class="nav-item"><a href="blog.html">Blog</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa-sharp fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="pov">Contact Page</h1>
+</section>
+
+<!-- Location Section  -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10874.633160173185!2d28.8690264!3d47.0469357!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cfa07dcbcd1%3A0x41c3381e876c9606!2zQ2VudHJ1bCBkZSBFeGNlbGVuyJvEgyDDrm4gRWNvbm9taWUgyJlpIEZpbmFuyJtl!5e0!3m2!1sro!2s!4v1674937217666!5m2!1sro!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+
+<!-- Contact Us Section  -->
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div class="contact-div">
+                <i class="fa-solid fa-house socialize"></i>
+                <h5>Universitatea Tehnica</h5>
+                <p class="cp">Strada Studentilor</p>
+            </div>
+
+            <div class="contact-div">
+                <i class="fa-solid fa-phone socialize"></i>
+                <h5>8 800 555</h5>
+                <p class="cp">Monday to Friday, 10 AM to 5 PM</p>
+            </div>
+
+            <div class="contact-div">
+                <i class="fa-solid fa-envelope socialize"></i>
+                <h5>info@utm.md</h5>
+                <p class="cp">Email us for more information</p>
+            </div>
+        </div>
+
+        <div class="contact-col">
+            <form action="">
+                <label>
+                    <input type="text" placeholder="Enter Your Name">
+                </label>
+                <label>
+                    <input type="email" placeholder="Enter Your Email Adress">
+                </label>
+                <label>
+                    <input type="text" placeholder="Enter Your Subject">
+                </label>
+                <label>
+                    <textarea rows="8" placeholder="Message"></textarea>
+                </label>
+                <button type="submit" class="hero-btn about-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>Abous Page</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odit exercitationem magni id aliquam,<br> harum
+        nemo eum quidem nobis facere obcaecati consequatur dolorem quas vero.</p>
+    <div class="icons">
+        <i class="fa-brands fa-odnoklassniki socialize"></i>
+        <i class="fa-brands fa-facebook socialize"></i>
+        <i class="fa-brands fa-twitter socialize"></i>
+        <i class="fa-brands fa-instagram socialize"></i>
+        <i class="fa-brands fa-skype socialize"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart custom-heart"></i> by Alex Xenon</p>
+</section>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>

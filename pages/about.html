@@ -1,0 +1,160 @@
+<!--suppress HtmlRequiredAltAttribute, JSUnresolvedLibraryURL -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <title>About Page</title>
+</head>
+<body>
+
+<section class="sub-header">
+    <nav class="top-elements">
+        <a href="index.html"><img src="../images/logo.png" alt=""></a>
+        <div class="nav-links" id="NavLinks">
+            <i class="fa-solid fa-xmark x-mark" onclick="hideMenu()"></i>
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="course.html">Course</a></li>
+                <li class="nav-item"><a href="blog.html">Blog</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa-sharp fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="pov">About US</h1>
+</section>
+
+<!-- About Page Content  -->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest <br> university</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo omnis, reprehenderit in, laboriosam
+                veritatis voluptas ipsam eaque possimus maxime, inventore atque explicabo provident facilis vel corrupti
+                perferendis ea hic sint. Assumenda amet laudantium sint. A praesentium ipsum veritatis dolore nisi! Rem,
+                quidem ipsam</p>
+            <a href="" class="hero-btn about-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="../images/bussines.webp" alt="" class="about-img">
+        </div>
+    </div>
+</section>
+
+<!-- Joke Section -->
+<section id="joke-section">
+    <div class="container">
+        <h2>Joke Section</h2>
+        <p id="joke" class="gradient-anim"></p>
+        <p id="joke-punchline"></p>
+        <div class="button-container">
+            <button id="show-punchline" onclick="fillWithPunchLine()">Show</button>
+            <button id="next-joke" onclick="fillWithJoke()">Next</button>
+        </div>
+    </div>
+</section>
+
+<!-- Frequently Asked Questions  -->
+<section class="frequent-questions">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion">
+        <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span
+                    class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
+                    suspendisse potenti.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span
+                    class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
+                    suspendisse potenti.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span
+                    class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
+                    suspendisse potenti.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span
+                    class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
+                    suspendisse potenti.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span
+                    class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
+                    suspendisse potenti.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section>-->
+<!--    <h1>University Schedule</h1>-->
+<!--    <table>-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <th>Course ID</th>-->
+<!--            <th>Course Name</th>-->
+<!--            <th>Credits</th>-->
+<!--            <th>Instructor</th>-->
+<!--            <th>Room</th>-->
+<!--            <th>Meeting Time</th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <?php include '../scripts/schedule_table.php'; ?>-->
+<!--        </tbody>-->
+<!--    </table>-->
+<!--</section>-->
+
+
+<!-- Footer -->
+<section class="footer">
+    <h4>Abous Page</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odit exercitationem magni id aliquam,<br> harum
+        nemo eum quidem nobis facere obcaecati consequatur dolorem quas vero.</p>
+    <div class="icons">
+        <i class="fa-brands fa-odnoklassniki socialize"></i>
+        <i class="fa-brands fa-facebook socialize"></i>
+        <i class="fa-brands fa-twitter socialize"></i>
+        <i class="fa-brands fa-instagram socialize"></i>
+        <i class="fa-brands fa-skype socialize"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart custom-heart"></i> by Alex Xenon</p>
+</section>
+
+<script src="../scripts/main.js"></script>
+<script src="../scripts/questionsScript.js"></script>
+<script src="../scripts/jokeScript.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
